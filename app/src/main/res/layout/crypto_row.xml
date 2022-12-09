@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/card"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cryptoRelativeLayout"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/symbolRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toLeftOf="@+id/priceRV"
+            android:padding="3dp"
+            android:text="Symbol"
+            android:textColor="@color/primary_text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cryptoNameRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symbolRV"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="3dp"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Rate"
+            android:typeface="sans"
+            android:id="@+id/priceRV"
+            android:textColor="@color/primary_text"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            />
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

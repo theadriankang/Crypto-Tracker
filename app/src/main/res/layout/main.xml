@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/coinama_top_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/coinama_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/PBLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/twitter_blue"
+            />
+
+        <Button
+            android:id="@+id/toSplash"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle_button"
+            android:text=":)" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/experimenttt"
+            android:fontFamily="@font/opensans_bold"
+            android:hint="  Search"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/medium_grey" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CryptoRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchBar" />
+    </RelativeLayout>
+
+</LinearLayout>
